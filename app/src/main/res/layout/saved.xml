@@ -1,0 +1,61 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/bg"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="15dp"
+		android:padding="15dp"
+		android:background="#FFFFFF"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="vertical">
+		<com.airbnb.lottie.LottieAnimationView
+			android:id="@+id/lottie1"
+			android:layout_width="300dp"
+			android:layout_height="200dp"
+			android:padding="8dp"
+			android:scaleType="fitCenter"
+			android:layout_centerInParent="true"
+			app:lottie_fileName="1798-check-animation.json"
+			app:lottie_loop="false"
+			app:lottie_autoPlay="true" />
+		<TextView
+			android:id="@+id/t1"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="5dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Successfully Saved !"
+			android:textSize="18sp"
+			android:textColor="#212121" />
+		<TextView
+			android:id="@+id/t2"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="30dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Your Recorded Voice is Successfully Saved to storage/emulated/0/Recorder."
+			android:textSize="14sp"
+			android:textColor="#9E9E9E" />
+		<TextView
+			android:id="@+id/b1"
+			android:focusable="false"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="15dp"
+			android:padding="12dp"
+			android:background="#F5F5F5"
+			android:gravity="center_horizontal|center_vertical"
+			android:text="Done"
+			android:textSize="14sp"
+			android:textColor="#616161" />
+	</LinearLayout>
+</LinearLayout>

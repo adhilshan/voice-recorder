@@ -1,0 +1,70 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#FFFFFF"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/empty"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="8dp"
+				android:gravity="center_horizontal|center_vertical"
+				android:orientation="vertical">
+				<com.airbnb.lottie.LottieAnimationView
+					android:id="@+id/lottie1"
+					android:layout_width="150dp"
+					android:layout_height="150dp"
+					android:scaleType="fitCenter"
+					android:layout_centerInParent="true"
+					app:lottie_fileName="lf20_v4d0iG.json"
+					app:lottie_loop="true"
+					app:lottie_autoPlay="true" />
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="No Voice Records"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="#607D8B" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/list"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+				<ListView
+					android:id="@+id/listview1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:choiceMode="none" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
